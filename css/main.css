@@ -2,14 +2,62 @@
   margin: 0;
   padding: 0;
 }
-.container{
+
+html,
+body,
+section{
+  width: 100%;
+  height: 100%;
+}
+
+#seccion{
   background-image: url(../img/fondo1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 500px;
+}
+
+.container{
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+@media(min-width: 0px) and (max-width: 480px){
+    #seccion{
+      background-image: url(../img/fondo4.jpg);
+    }
+    #gatos{
+      content:url(../img/kitten3.png);
+    }
+    div{
+      width:38%;
+    }
+}
+@media(min-width: 481px) and (max-width:768px){
+    #seccion{
+      background-image: url(../img/fondo3.jpg);
+    }
+    #gatos{
+      content:url(../img/kitten2.png);
+    }
+    div{
+      width:60%;
+    }
+}
+@media(min-width: 769px) and (max-width:1024px){
+    #seccion{
+      background-image: url(../img/fondo2.png);
+    }
+    #gatos{
+      content:url(../img/kitten1.png);
+    }
+}
+@media(min-width: 1025px) and (max-width:1500px){
+    #seccion{
+      background-image: url(../img/fondo1.jpg);
+    }
+    #gatos{
+      content:url(../img/kitten1.png);
+    }
 }
